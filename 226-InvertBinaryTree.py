@@ -33,7 +33,7 @@ def printTree(root):
     print (ans)
 
 def createTree(node):
-    if not node or node[0]=='#' : return None
+    if node is None or node[0]=='#' : return None
     root , q = TreeNode(node[0]) , []
     q.append(root)
     cur ,  n = q.pop(0),len(node)
